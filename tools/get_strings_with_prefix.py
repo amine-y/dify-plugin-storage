@@ -5,6 +5,8 @@ from typing import Any
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
+from tools._storage import get_optional
+
 class GetStringsWithPrefixTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         prefix = tool_parameters.get("prefix", "")
@@ -15,7 +17,7 @@ class GetStringsWithPrefixTool(Tool):
 
         for key_bytes in matching_keys:
             key = key_bytes.decode()
-            value = self.session.storage.get(key)
+            value = get_optional(self.session.storage, key)
             if value is not None:
                 results.append({
                     "key": key.removeprefix(prefix),

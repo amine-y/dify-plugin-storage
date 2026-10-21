@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 
 # Distribution / packaging
+.git/
+.github/
+.vscode/
+tests/
 .Python
 build/
 develop-eggs/

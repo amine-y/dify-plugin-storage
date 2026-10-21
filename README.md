@@ -1,9 +1,9 @@
 ## storage
 
-**Author:** hjlarry  
-**Version:** 0.0.1  
-**Type:** extension  
-**Repo:** :[https://github.com/hjlarry/dify-plugin-storage](https://github.com/hjlarry/dify-plugin-storage)
+**Author:** mohamedrayenbouzaabia-axelites
+**Version:** 0.0.5
+**Type:** extension
+**Repo:** [mohamedrayenbouzaabia-axelites/dify-plugin-get-set-strings](https://github.com/mohamedrayenbouzaabia-axelites/dify-plugin-get-set-strings)
 
 ### Description
 
