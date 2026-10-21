@@ -1,9 +1,9 @@
-version: 0.0.2
+version: 0.0.5
 type: plugin
-author: hjlarry
-name: storage
+author: mohamedrayenbouzaabia-axelites
+name: storage-forked
 label:
-  en_US: Storage
+  en_US: Storage forked
   zh_Hans: 存储
 description:
   en_US: a key-value storage tool allow you save and get data across different apps.
@@ -23,7 +23,7 @@ plugins:
   endpoints:
     - provider/file.yaml
 meta:
-  version: 0.0.2
+  version: 0.0.5
   arch:
     - amd64
     - arm64

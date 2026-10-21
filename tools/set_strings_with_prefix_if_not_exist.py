@@ -15,7 +15,7 @@ class SetStringsWithPrefixIfNotExistTool(Tool):
             value = item.get("value")
             if key and value is not None:
                 full_key = f"{prefix}{key}"
-                if self.session.storage.get(full_key) is None:
+                if not self.session.storage.exist(full_key):
                     self.session.storage.set(full_key, value.encode())
                     set_count += 1
 

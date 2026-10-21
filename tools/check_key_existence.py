@@ -5,10 +5,12 @@ from typing import Any
 from dify_plugin import Tool
 from dify_plugin.entities.tool import ToolInvokeMessage
 
+from tools._storage import get_optional
+
 class CheckKeyExistenceTool(Tool):
     def _invoke(self, tool_parameters: dict[str, Any]) -> Generator[ToolInvokeMessage, None, None]:
         key = tool_parameters.get("key")
-        value_bytes = self.session.storage.get(key)
+        value_bytes = get_optional(self.session.storage, key)
 
         if value_bytes is None:
             response = {"exists": False, "type": None}

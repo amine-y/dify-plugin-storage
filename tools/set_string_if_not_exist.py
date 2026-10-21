@@ -9,8 +9,7 @@ class SetStringIfNotExistTool(Tool):
         key = tool_parameters.get("key")
         value = tool_parameters.get("value")
 
-        # Check if key already exists
-        if self.session.storage.get(key) is None:
+        if not self.session.storage.exist(key):
             self.session.storage.set(key, value.encode())
             yield self.create_text_message(f"SUCCESS: Key '{key}' was set.")
         else:
