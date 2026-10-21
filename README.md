@@ -1,3 +1,10 @@
+# 🔴🔴 OBSOLETE — DO NOT USE 🔴🔴
+
+> This repository is superseded and should not be used for new builds or
+> releases. The maintained canonical source is
+> **[axelites/dify-plugin-storage](https://github.com/axelites/dify-plugin-storage)**.
+> Version 0.0.5 and all future fixes are maintained there.
+
 ## storage
 
 **Author:** hjlarry  
