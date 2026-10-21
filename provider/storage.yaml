@@ -1,4 +1,3 @@
-# provider/storage.yaml
 identity:
   author: mohamedrayenbouzaabia-axelites
   name: storage
@@ -12,37 +11,13 @@ identity:
     pt_BR: a key-value storage tool allow you save and get data across different apps.
   icon: icon.svg
 tools:
-  # Existing String Tools
   - tools/get_string.yaml
   - tools/set_string.yaml
   - tools/get_strings.yaml
   - tools/set_strings.yaml
-  - tools/delete_key.yaml
-  # Upcoming String Features
-  - tools/set_strings_with_prefix.yaml
-  - tools/get_strings_with_prefix.yaml
-  - tools/delete_strings_by_prefix.yaml
-  - tools/string_exists.yaml
-  - tools/set_string_if_not_exist.yaml
-  - tools/set_strings_with_prefix_if_not_exist.yaml
-  - tools/get_string_with_default.yaml
-  - tools/get_strings_with_prefix_with_default.yaml
-  # Number Features
-  - tools/set_number.yaml
-  - tools/get_number.yaml
-  - tools/set_numbers.yaml
-  - tools/get_numbers.yaml
-  - tools/set_number_if_not_exist.yaml
-  - tools/set_numbers_with_prefix_if_not_exist.yaml
-  - tools/get_number_with_default.yaml
-  - tools/get_numbers_with_defaults.yaml
-  - tools/get_numbers_with_prefix_with_defaults.yaml
-  # Utility Features
-  - tools/get_all_prefixes.yaml
-  - tools/check_key_existence.yaml
-  # Existing File Tools
   - tools/get_file.yaml
   - tools/set_file.yaml
+  - tools/delete_key.yaml
 extra:
   python:
     source: provider/storage.py
